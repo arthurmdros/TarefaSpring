@@ -1,12 +1,12 @@
 # TarefaSpring
 
 
-#Desenvolvimento de uma aplicação Web(CRUD)
+# Desenvolvimento de uma aplicação Web(CRUD)
 
-#Frameworks:
+# Frameworks:
 
 Java Spring, Hibernate e JPA.
 
-#Objetivo:
+# Objetivo:
 
 Tarefa ofertada pelo curso de Sistemas de Informação.
