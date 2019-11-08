@@ -25,6 +25,13 @@ public class CustomerController {
         mav.addObject("listCustomer", listCustomer);
         return mav;
     }
+    @RequestMapping("home")
+    public ModelAndView index() {
+        List<Customer> listCustomer = customerService.listAll();
+        ModelAndView mav = new ModelAndView("index");
+        mav.addObject("listCustomer", listCustomer);
+        return mav;
+    }
 
     @RequestMapping("/new")
     public String newCustomerForm(Map<String, Object> model) {
