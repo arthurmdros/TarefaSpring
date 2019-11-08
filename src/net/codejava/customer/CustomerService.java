@@ -24,6 +24,10 @@ public class CustomerService {
     public Customer get(Long id) {
         return repo.findById(id).get();
     }
+    
+    public List<Customer> search(String keyword) {
+        return repo.search(keyword);
+    }
      
     public void delete(Long id) {
         repo.deleteById(id);

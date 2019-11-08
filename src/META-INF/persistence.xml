@@ -6,15 +6,16 @@
     version="2.1">
      
     <persistence-unit name="SalesDB">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
-        	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sales" />
-            <property name="javax.persistence.jdbc.user" value="batman" />
-            <property name="javax.persistence.jdbc.password" value="12345" />                        
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sales?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="arthurmdros" />
+            <property name="javax.persistence.jdbc.password" value="SpringTutorial" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />            
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
         </properties>
     </persistence-unit>
-     
+
 </persistence>
